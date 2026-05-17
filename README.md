@@ -26,12 +26,24 @@ To streamlime the process of Threat Hunting by integrating Artifical Intelligenc
 
 - "Instructions" are basically what is how the AI is supposed to act and what they're supposed to do.
 
+# Principle followed 
+1. Least Priveleged
+   - Azure Foundry authenticates through a dedicated Service Principal
+   - The Service Principal is delegated specific API access to Sentinel
+2. Zero Trust Architecture
+   - Explicit authentication via OAuth2.0
+   - Identity-based access control
+   - API access controlled through delegated authorization
+3. Defense in Depth
+   - Multiple security layers
+
 # Key Considerations 
 - I'm currently using Azure for Students, so some of the access are not available such as the Sentinel Platform Delegated API Access.
 - Full final view is not achievable with this subscription.
 - No data lake involved
 
 <img width="715" height="751" alt="image" src="https://github.com/user-attachments/assets/6fd09740-429c-4d89-84d8-26d418493660" />
+
 
 
 
